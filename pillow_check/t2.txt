@@ -1,0 +1,44 @@
+== empirical SD of PIL impulse response (255 impulse, 101x101) ==
+r=1: PIL 8-bit SD=0.9709  float pipeline SD=1.0000  PIL ink kept=0.9569  nonzero px=23
+r=2: PIL 8-bit SD=2.0339  float pipeline SD=2.0000  PIL ink kept=0.9765  nonzero px=77
+r=4: PIL 8-bit SD=4.0808  float pipeline SD=4.0000  PIL ink kept=0.9490  nonzero px=177
+
+== bright line at column 1 (28x28, full height, value 255) ==
+-- r=4.0000
+   PIL actual (uint8, round each pass, replicate each pass)   mass kept = 0.6941
+   emul float (no rounding), replicate each pass              mass kept = 0.6964
+   emul float, ZERO pad each pass                             mass kept = 0.4114
+   PIL composite kernel once, replicate(=zero here)           mass kept = 0.6393
+   PIL composite kernel once, reflect                         mass kept = 1.0922
+   notebook Gaussian 25 taps, zero                            mass kept = 0.5739
+   notebook Gaussian 25 taps, replicate                       mass kept = 0.6468
+   notebook Gaussian 25 taps, reflect                         mass kept = 1.0968
+   per-pass mass, float replicate: [0.6905 0.6905 0.6964]; uint8: [0.6824 0.6902 0.6941]; col0 after pass1 = 30.0
+-- r=3.9598
+   PIL actual (uint8, round each pass, replicate each pass)   mass kept = 0.7059
+   emul float (no rounding), replicate each pass              mass kept = 0.6982
+   emul float, ZERO pad each pass                             mass kept = 0.4138
+   PIL composite kernel once, replicate(=zero here)           mass kept = 0.6407
+   PIL composite kernel once, reflect                         mass kept = 1.0931
+   notebook Gaussian 25 taps, zero                            mass kept = 0.5739
+   notebook Gaussian 25 taps, replicate                       mass kept = 0.6468
+   notebook Gaussian 25 taps, reflect                         mass kept = 1.0968
+   per-pass mass, float replicate: [0.6924 0.6924 0.6982]; uint8: [0.698  0.702  0.7059]; col0 after pass1 = 30.3
+
+== MNIST test set (10000 images): total ink out / ink in ==
+-- r=4.0000
+   PIL actual                                  0.9769
+   same pipeline in float (no rounding)        0.9773
+   3-pass box, float, ZERO pad each pass       0.9520
+   composite kernel once, zero/replicate pad   0.9594
+   composite kernel once, reflect pad          1.0265
+-- r=3.9598
+   PIL actual                                  0.9776
+   same pipeline in float (no rounding)        0.9781
+   3-pass box, float, ZERO pad each pass       0.9536
+   composite kernel once, zero/replicate pad   0.9608
+   composite kernel once, reflect pad          1.0260
+   notebook Gaussian s=4, reflect              1.0255
+   notebook Gaussian s=4, zero                 0.9593
+   notebook Gaussian s=4, replicate            0.9595
+   border ring (outer 1px) of raw MNIST test: mean=0.065 / 0.007; any nonzero frac=0.0107

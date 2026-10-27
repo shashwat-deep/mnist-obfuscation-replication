@@ -1,0 +1,33 @@
+# Python packages for the CPU checks (pillow_check/, grid_check/), paper_numbers.py and the two figure scripts, all pinned.
+# Pillow 12.3.0 is the version that pillow_check/emul.py matches bit for bit; PyTorch 2.14.1 is the one the Pillow check used before.
+# Install into a fresh environment with Python 3.13:
+#   uv venv --python 3.13 .venv
+#   uv pip sync --python .venv/bin/python --index-strategy unsafe-best-match requirements-cpu-checks.txt
+
+--index-url https://pypi.org/simple
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+contourpy==1.4.0
+cycler==0.12.1
+filelock==4.2.4
+fonttools==4.67.0
+fsspec==2026.9.0
+jinja2==3.1.6
+kiwisolver==1.5.1
+markupsafe==3.0.4
+matplotlib==3.11.2
+mpmath==1.3.0
+networkx==3.7
+numpy==2.5.2
+packaging==26.3
+pillow==12.3.0
+pyparsing==3.3.3
+python-dateutil==3.0.0
+scipy==1.18.1
+setuptools==84.2.1
+six==1.17.0
+sympy==1.14.0
+torch==2.14.1+cpu
+torchvision==0.29.1+cpu
+typing-extensions==4.16.0
+tzdata==2026.5

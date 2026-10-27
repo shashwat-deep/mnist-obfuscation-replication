@@ -1,0 +1,6 @@
+r=0.5000 box radius=0.04545 int=0 ww=15379114 fw=699051 sum1=16777216 | 1-pass taps=3 3-pass taps=7 kernel SD=0.5000 sum=1.00000000 | mismatched px rand=0 mnist=0
+r=1.0000 box radius=0.25000 int=0 ww=11184811 fw=2796202 sum1=16777215 | 1-pass taps=3 3-pass taps=7 kernel SD=1.0000 sum=0.99999982 | mismatched px rand=0 mnist=0
+r=2.0000 box radius=1.37500 int=1 ww=4473924 fw=1677722 sum1=16777216 | 1-pass taps=5 3-pass taps=13 kernel SD=2.0000 sum=1.00000000 | mismatched px rand=0 mnist=0
+r=3.9598 box radius=3.39851 int=3 ww=2151744 fw=857504 sum1=16777216 | 1-pass taps=9 3-pass taps=25 kernel SD=3.9598 sum=1.00000000 | mismatched px rand=0 mnist=0
+r=4.0000 box radius=3.43750 int=3 ww=2130440 fw=932068 sum1=16777216 | 1-pass taps=9 3-pass taps=25 kernel SD=4.0000 sum=1.00000000 | mismatched px rand=0 mnist=0
+r=7.3000 box radius=6.78311 int=6 ww=1151789 fw=901979 sum1=16777215 | 1-pass taps=15 3-pass taps=43 kernel SD=7.3000 sum=0.99999982 | mismatched px rand=0 mnist=0

@@ -1,0 +1,10 @@
+condition,trained_on_clean_%,trained_on_clean_sd,trained_on_obfuscated_%,trained_on_obfuscated_sd
+clean,98.62,0.06,98.62,0.06
+pixelate 2x2,98.1,0.43,98.39,0.13
+pixelate 4x4,80.54,6.33,95.94,0.07
+pixelate 7x7,33.25,5.52,84.03,0.41
+pixelate 14x14,10.02,1.61,51.33,0.33
+blur sigma=1,97.97,0.15,98.04,0.08
+blur sigma=2,87.04,4.2,96.28,0.04
+blur sigma=4,31.21,12.71,89.11,0.79
+solid mask,10.81,0.76,11.35,0.0

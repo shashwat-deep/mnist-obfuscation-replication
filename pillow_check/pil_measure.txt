@@ -1,0 +1,9 @@
+radius=1.000: SD of Pillow's effective kernel = 0.992, support = 7 taps
+radius=2.000: SD of Pillow's effective kernel = 1.996, support = 11 taps
+radius=4.000: SD of Pillow's effective kernel = 3.984, support = 21 taps
+radius=3.960: SD of Pillow's effective kernel = 3.939, support = 21 taps
+edge line, Pillow r=4 keeps 0.694 of its mass | Gaussian with zero 0.647, reflect 1.097, replicate 0.647
+MNIST ink vs original: Pillow 0.9776 | notebook (reflect) 1.0255 | zero pad 0.9593 | replicate 0.9595
+  |Pillow - notebook reflect|: mean 0.0077, border (4 px) mean 0.0132, max 0.130
+  |Pillow - zero pad        |: mean 0.0047, border (4 px) mean 0.0073, max 0.134
+  |Pillow - replicate       |: mean 0.0047, border (4 px) mean 0.0073, max 0.097

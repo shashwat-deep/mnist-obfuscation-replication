@@ -1,0 +1,6 @@
+notebook  seeds [0, 1, 2]: [94.92, 94.97, 94.84]  mean 94.91 [94.75, 95.07]
+pillow    seeds [0, 1, 2]: [94.38, 94.34, 94.55]  mean 94.42 [94.15, 94.70]
+zeropad   seeds [0, 1, 2]: [94.34, 93.9, 94.29]  mean 94.18 [93.58, 94.78]
+pillow - notebook, paired over seeds [0, 1, 2]: [-0.54, -0.63, -0.29] -> -0.49 [-0.92, -0.05]
+zeropad - notebook, paired over seeds [0, 1, 2]: [-0.58, -1.07, -0.55] -> -0.73 [-1.46, -0.01]
+Privacy Blur's reported 97.58; T4 10-epoch notebook-blur result 94.89 ± 0.13 (pop SD)

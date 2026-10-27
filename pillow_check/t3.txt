@@ -1,0 +1,20 @@
+== PIL radius 4.0000 vs notebook sigma 4 (all in gray levels) ==
+  total: ablation round(notebook) vs PIL       mean|d|=2.031  p99=13.00  max=34.00  frac px differ(>0.5)=0.746
+  kernel shape: Gaussian vs box-composite (both reflect, float) mean|d|=0.917  p99=3.50  max=7.34  frac px differ(>0.5)=0.623
+  edges: reflect-once vs replicate-each-pass (box, float)      mean|d|=1.662  p99=14.02  max=31.26  frac px differ(>0.5)=0.437
+  edges: replicate-once vs replicate-each-pass (box, float)    mean|d|=0.595  p99=7.73  max=24.39  frac px differ(>0.5)=0.226
+  rounding: per-pass (PIL) vs once-at-end (same pipeline)      mean|d|=0.127  p99=1.00  max=1.00  frac px differ(>0.5)=0.127
+  rounding: PIL vs float pipeline                              mean|d|=0.273  p99=0.74  max=1.31  frac px differ(>0.5)=0.127
+  rounding: once-at-end vs float                               mean|d|=0.247  p99=0.49  max=0.50  frac px differ(>0.5)=0.000
+  rounding bias: mean(P - D) = -0.0120  mean(D8 - D) = -0.0037
+  interior 16x16: ablation vs PIL mean|d|=1.421  p99=4.00  max=10.00  frac px differ(>0.5)=0.797 | per-pass vs end rounding mean|d|=0.124  p99=1.00  max=1.00  frac px differ(>0.5)=0.124
+== PIL radius 3.9598 vs notebook sigma 4 (all in gray levels) ==
+  total: ablation round(notebook) vs PIL       mean|d|=1.949  p99=13.00  max=33.00  frac px differ(>0.5)=0.727
+  kernel shape: Gaussian vs box-composite (both reflect, float) mean|d|=0.713  p99=2.76  max=6.49  frac px differ(>0.5)=0.530
+  edges: reflect-once vs replicate-each-pass (box, float)      mean|d|=1.619  p99=13.98  max=31.26  frac px differ(>0.5)=0.426
+  edges: replicate-once vs replicate-each-pass (box, float)    mean|d|=0.577  p99=7.64  max=24.48  frac px differ(>0.5)=0.219
+  rounding: per-pass (PIL) vs once-at-end (same pipeline)      mean|d|=0.126  p99=1.00  max=1.00  frac px differ(>0.5)=0.126
+  rounding: PIL vs float pipeline                              mean|d|=0.272  p99=0.74  max=1.45  frac px differ(>0.5)=0.126
+  rounding: once-at-end vs float                               mean|d|=0.247  p99=0.49  max=0.50  frac px differ(>0.5)=0.000
+  rounding bias: mean(P - D) = -0.0145  mean(D8 - D) = -0.0038
+  interior 16x16: ablation vs PIL mean|d|=1.101  p99=4.00  max=9.00  frac px differ(>0.5)=0.732 | per-pass vs end rounding mean|d|=0.125  p99=1.00  max=1.00  frac px differ(>0.5)=0.125
